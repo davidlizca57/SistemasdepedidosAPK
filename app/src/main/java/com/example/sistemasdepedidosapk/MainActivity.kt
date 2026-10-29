@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         rvProductos.layoutManager = LinearLayoutManager(this)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://20.20.2.62:3000/")
+            .baseUrl("http://192.168.1.211:3000/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
         apiService = retrofit.create(ApiService::class.java)
